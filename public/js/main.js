@@ -17,7 +17,7 @@ var form = document.getElementById("translate-form")
 var textField = form.elements["english-text"];
 var pirateTextDiv = document.getElementById("pirate-text")
 
-var endpoint = "http://localhost:8080/piratespeak"
+var endpoint = "/piratespeak"
 var parameters = {
 	"text": "text"
 }
