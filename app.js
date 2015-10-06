@@ -40,5 +40,9 @@ app.get(endpoint, function (req, res) {
 
 
 
-app.listen(8080);
+var envPort = process.env.PORT
+if (envPort !== undefined) app.listen(envPort);
+else app.listen(8080);
+
+
 
